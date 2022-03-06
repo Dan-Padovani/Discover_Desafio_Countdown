@@ -79,4 +79,4 @@ STEP 2. Extract all files and open the file "index.html" with you favorite brows
 
 ### :memo: License
 
-This project is under the MIT license. See the [LICENSE](link/master/LICENSE) for more information.
+This project is under the MIT license. See the [LICENSE](https://github.com/Dan-Padovani/Discover_Desafio_Countdown/blob/master/LICENSE) for more information.
