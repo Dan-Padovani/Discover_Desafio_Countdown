@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="./scripts/script.js"></script>
+		<link rel="stylesheet" href="spo./style/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Countdown JS</title>
+	</head>
+	<body>
+		<div id="container">
+			<header>
+				<img src="./assets/top-image.svg" alt="header top image" />
+			</header>
+			<main>
+				<div class="counter">
+					<h1>READY TO LAUNCH IN...</h1>
+					<ul>
+						<li>Dias</li>
+						<li>Horas</li>
+						<li>Minutos</li>
+						<li>Segundos</li>
+					</ul>
+					<p id="days"></p>
+					<p id="hours"></p>
+					<p id="minutes"></p>
+					<p id="seconds"></p>
+				</div>
+				<div class="subscribe">
+					<p>Inscreva-se para saber mais sobre o lançamento</p>
+					<a
+						onclick="document.getElementById('modalForm').style.display='block'"
+					>
+						Inscreva-se
+					</a>
+				</div>
+			</main>
+			<aside>
+				<img src="./assets/rocket.svg" alt="rocket image" />
+			</aside>
+			<footer>
+				<img src="./assets/bottom-image.svg" alt="footer image" />
+			</footer>
+			<!-- My modal form starts here -->
+			<div class="modal" id="modalForm">				
+				<div class="modalContent">
+					<div class="formSideImg">
+						<img src="./assets/rocket.svg" alt="rocket image" />
+					</div>
+					<div class="formSideData">						
+						<span
+							onclick="document.getElementById('modalForm').style.display='none'"
+							class="close"
+						>
+							&times;
+						</span>
+						<h3>Cadastre-se aqui para acompanhar o lançamento</h3>
+						<form action="">
+							<fieldset>
+								<legend>Inscreva-se</legend>
+								<label for="formName"> Nome Completo </label>
+								<input
+									type="text"
+									name="formName"
+									id="formName"
+									autocomplete="name"
+									placeholder="Digite seu nome"
+									autofocus
+									required
+								/>
+								<label for="formEmail"> E-mail </label>
+								<input
+									type="text"
+									name="formEmail"
+									id="formEmail"
+									autocomplete="email"
+									placeholder="Digite seu e-mail"
+									required
+								/>
+								<button type="submit">Enviar</button>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
